@@ -1,0 +1,217 @@
+/* Components genèrics*/
+
+body {
+  background-color: var(--bg);
+  background-image: linear-gradient(var(--bg-lines) 0.1em, transparent 0.1em),
+    linear-gradient(90deg, var(--bg-lines) 0.1em, transparent 0.1em);
+  background-size: 3em 3em;
+  padding: 10px;
+  margin: 0;
+
+  --bg-overlay: #131112ff;
+  --bg: rgb(48, 48, 53);
+  --bg-lines: rgb(55, 55, 58);
+  --title: #2158b6ff;
+  --screen-bg: #e8f1f6ff;
+  --emphasis: rgb(149, 214, 223);
+  --emphasis-lines: rgb(159, 224, 233);
+  --text: lightgray;
+  --white: white;
+}
+
+h1 {
+  color: var(--white);
+  white-space-collapse: preserve-spaces;
+}
+
+#create_btn {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: none;
+  background-color: var(--white);
+  border-radius: 15px;
+  cursor: pointer;
+  bottom: 10px;
+  right: 10px;
+}
+
+label {
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+#toolbar {
+  width: 40%;
+  min-width: 930px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+#container {
+  width: fit-content;
+  margin: auto;
+  display: flex;
+}
+
+/* Panell d'opcions */
+
+#settings {
+  height: 400px;
+  aspect-ratio: 0.8;
+  background-color: var(--bg-overlay);
+  border-radius: 10px;
+  margin-left: 15px;
+  padding: 20px;
+  padding-top: 10px;
+}
+
+#list_content_input {
+  height: 50px;
+  resize: vertical;
+}
+
+#description_input {
+  height: 65px;
+  resize: none;
+  margin-bottom: 15px;
+}
+
+#list_content_input {
+  height: 93px;
+  resize: none;
+}
+
+/* Output */
+
+#output_card {
+  width: 930px;
+  height: 72px;
+  margin: auto;
+  margin-top: 15px;
+  background-color: var(--bg-overlay);
+  border-radius: 10px;
+}
+
+.output {
+  color: var(--text);
+  margin-bottom: 10px;
+  white-space-collapse: preserve-spaces;
+}
+
+/* Dins la pantalla de la HP */
+
+#screen {
+  background-color: var(--screen-bg);
+  border-color: var(--bg-overlay);
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 4px;
+  height: 400px;
+  min-height: 300px;
+  aspect-ratio: 1.4893;
+  position: relative;
+}
+
+#title_bar {
+  background-color: var(--title);
+  border-color: var(--bg-overlay);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  aspect-ratio: 17.5;
+}
+
+#title_input {
+  background-color: transparent;
+  border-style: hidden;
+  color: var(--white);
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  font-size: large;
+  content: "Cosa";
+}
+
+#description_text {
+  left: 1px;
+  bottom: 5px;
+  width: fit-content;
+  position: absolute;
+  font-size: large;
+  white-space-collapse: preserve;
+}
+
+.element {
+  height: 9.25%;
+  width: 200px;
+  background-color: var(--white);
+  cursor: pointer;
+  position: absolute;
+  border: solid;
+  border-color: darkgray;
+  border-radius: 0px;
+  border-width: 2px;
+}
+
+.selected {
+  border-color: var(--bg);
+  border-width: 3px;
+}
+
+.desplegable {
+  border-right-width: 25px;
+}
+
+.swiper {
+  top: 0;
+  background-color: var(--white);
+  height: 100%;
+  position: absolute;
+  aspect-ratio: 0.8;
+  padding-top: 5px;
+  border: solid;
+  border-width: 1px;
+}
+
+.card-title {
+  left: -50px;
+  top: 0;
+  width: fit-content;
+  height: 100%;
+  position: absolute;
+  font-size: large;
+  white-space-collapse: preserve;
+}
+
+.right-swiper {
+  right: -30px;
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
+  padding-left: 4px;
+}
+
+.left-swiper {
+  left: -30px;
+  border-top-left-radius: 100%;
+  border-bottom-left-radius: 100%;
+  padding-left: 5px;
+}
+
+.delete-element {
+  top: 35px;
+  left: 82px;
+  width: 30px;
+  height: 30px;
+  padding: 4px;
+  background-color: rgb(238, 75, 75);
+  color: var(--white);
+  border-radius: 5px;
+  border-width: 1px;
+  border: solid;
+  border-color: black;
+  position: absolute;
+}
